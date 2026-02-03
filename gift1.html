@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gift1.css">
+</head>
+<body>
+    <div class="collage-wrapper">
+  <img src="Untitled design (3).png" class="collage">
+</div>
+<div class="heart">
+        <img src="download__26_-removebg-preview.png">
+    </div>
+    <div class="heart1">
+        <img src="pink_butterfly_sticker-removebg-preview.png">
+    </div>
+    <div class="heart2">
+        <img src="download__27_-removebg-preview.png">
+    </div>
+    <div class="heart3">
+        <img src="_-removebg-preview.png">
+    </div>
+    <div class="heart4">
+        <img src="download__28_-removebg-preview.png">
+    </div>
+    <div class="heart5">
+        <img src="download__29_-removebg-preview.png">
+    </div>
+    <button class="next">
+        <a href="yes.html">NEXT</a>
+    </button>
+<audio autoplay loop>
+    <source src="Nodivalandava.mp3" type="audio/mpeg">
+</audio>
+<script>
+function playMusic(){
+  const music = document.getElementById("bgMusic");
+  music.play();
+  document.body.classList.add("fade-out");
+
+  setTimeout(function(){
+    window.location.href = "index.html";
+  }, 1000);
+}
+</script>
+
+</body>
+</html>

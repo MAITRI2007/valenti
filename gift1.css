@@ -1,0 +1,254 @@
+/* body{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(https://i.pinimg.com/1200x/bb/c9/19/bbc9191728dbb71565142e3b834becee.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.collage{
+  height: 700px;
+  width: auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  border: 5px solid black;
+}
+.heart{
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    img{
+        height: 110px;
+        width: 110px;
+    }
+}
+.heart1{
+    position: absolute;
+    top: 30%;
+    right: 20px;;
+    img{
+        height: 110px;
+        width: 110px;
+    }
+}
+.heart2{
+     position: absolute;
+    top: 54%;
+    right: 9%;
+    transform: translateX(-50%);
+    img{
+        height: 110px;
+        width: 110px;
+    }
+}
+.heart3{
+    position: absolute;
+    bottom: 1%;
+    left: 10px;
+    img{
+        height: 400px;
+        width: 400px;
+    }
+}
+.heart4{
+    position: absolute;
+    top: 5%;
+    right: 200px;;
+    img{
+        height: 300px;
+        width: 300px;
+    }
+}
+.heart5{
+    position: absolute;
+    top: 5%;
+    left: 250px;
+    img{
+        height: 180px;
+        width: 180px;
+    }
+}
+.next {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    height: 50px;
+    width: 160px;
+
+    background-color: #F2D7B6;
+    color: #5A1A1A;
+    font-size: 22px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    border-radius: 14px;
+    border: 2px solid #8B2E2E;
+    box-shadow: 
+        0 0 0 3px rgba(139, 46, 46, 0.2),
+        0 8px 20px rgba(90, 26, 26, 0.35);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.next:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 0 0 4px rgba(139, 46, 46, 0.35),
+        0 12px 25px rgba(90, 26, 26, 0.45);
+} */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(https://i.pinimg.com/1200x/bb/c9/19/bbc9191728dbb71565142e3b834becee.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* collage */
+.collage {
+  max-height: 70vh;
+  width: auto;
+  max-width: 90vw;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  border: 4px solid black;
+  z-index: 2;
+}
+
+/* 💖 HEARTS */
+.heart,
+.heart1,
+.heart2,
+.heart3,
+.heart4,
+.heart5 {
+  position: absolute;
+  z-index: 1;
+}
+
+/* individual positions */
+.heart {
+  top: 18%;
+  left: 10px;
+}
+.heart1 {
+  top: 28%;
+  right: 10px;
+}
+.heart2 {
+  top: 55%;
+  right: 6%;
+}
+.heart3 {
+  bottom: -20px;
+  left: -20px;
+}
+.heart4 {
+  top: 4%;
+  right: 80px;
+}
+.heart5 {
+  top: 6%;
+  left: 80px;
+}
+
+/* ❤️ heart images */
+.heart img,
+.heart1 img,
+.heart2 img {
+  height: 90px;
+  width: 90px;
+}
+
+.heart3 img {
+  height: 220px;
+  width: 220px;
+}
+
+.heart4 img {
+  height: 200px;
+  width: 200px;
+}
+
+.heart5 img {
+  height: 130px;
+  width: 130px;
+}
+
+/* 👉 NEXT BUTTON */
+.next {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  height: 48px;
+  width: 150px;
+
+  background-color: #F2D7B6;
+  color: #5A1A1A;
+  font-size: 18px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  border-radius: 14px;
+  border: 2px solid #8B2E2E;
+
+  box-shadow: 
+    0 0 0 3px rgba(139, 46, 46, 0.25),
+    0 8px 20px rgba(90, 26, 26, 0.35);
+
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.next:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 0 0 4px rgba(139, 46, 46, 0.35),
+    0 12px 25px rgba(90, 26, 26, 0.45);
+}
+
+/* 📱 MOBILE EXTRA FIX */
+@media (max-width: 600px) {
+  .heart img,
+  .heart1 img,
+  .heart2 img {
+    height: 65px;
+    width: 65px;
+  }
+
+  .heart3 img {
+    height: 160px;
+    width: 160px;
+  }
+
+  .heart4 img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .heart5 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .next {
+    width: 130px;
+    font-size: 16px;
+  }
+}
